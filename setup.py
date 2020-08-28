@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import io
 import os
 
-VERSION = "0.1"
+VERSION = "0.2"
 
 
 def get_long_description():
@@ -14,8 +14,8 @@ def get_long_description():
 
 
 setup(
-    name="dbf-to-sqlite",
-    description="CLI tool for converting DBF files (dBase, FoxPro etc) to SQLite",
+    name="dbf-to-sqlitem",
+    description="CLI конвертация DBF файлов (dBase, FoxPro etc) to SQLite",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Simon Willison",
@@ -25,7 +25,7 @@ setup(
     install_requires=["dbf==0.97.11", "click", "sqlite_utils"],
     entry_points="""
         [console_scripts]
-        dbf-to-sqlite=dbf_to_sqlite.cli:cli
+        dbf-to-sqlitem=dbf_to_sqlite.cli:cli
     """,
     url="https://github.com/simonw/dbf-to-sqlite",
     classifiers=[
